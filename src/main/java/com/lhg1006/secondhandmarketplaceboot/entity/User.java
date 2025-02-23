@@ -3,15 +3,15 @@ package com.lhg1006.secondhandmarketplaceboot.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+
 @Entity
-@Table(name = "users")
 @Getter
 @Setter
+@Table(name = "users")
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class User {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -24,4 +24,8 @@ public class User {
 
     @Column(nullable = false, unique = true)
     private String email;
+
+    private String location;  // 위치 정보 추가
+    private String bio;       // 자기소개 추가
+    private String avatarUrl; // 프로필 이미지 URL 추가
 }

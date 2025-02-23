@@ -5,10 +5,8 @@ import lombok.Getter;
 
 @Getter
 @Builder
-public class UserDto {
-    private Long id;
+public class UserProfileResponseDto {
     private String username;
-    private String email;
     private String location;
     private String bio;
     private String avatarUrl;

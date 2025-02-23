@@ -2,6 +2,7 @@ package com.lhg1006.secondhandmarketplaceboot.config;
 
 
 import com.lhg1006.secondhandmarketplaceboot.security.JwtAuthenticationFilter;
+import com.lhg1006.secondhandmarketplaceboot.security.JwtTokenProvider;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package com.lhg1006.secondhandmarketplaceboot.config;
+package com.lhg1006.secondhandmarketplaceboot.security;
 
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;

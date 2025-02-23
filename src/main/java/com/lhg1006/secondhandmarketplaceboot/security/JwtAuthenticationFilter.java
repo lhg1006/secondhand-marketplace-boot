@@ -1,6 +1,5 @@
 package com.lhg1006.secondhandmarketplaceboot.security;
 
-import com.lhg1006.secondhandmarketplaceboot.config.JwtTokenProvider;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

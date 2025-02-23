@@ -1,8 +1,8 @@
-package com.lhg1006.secondhandmarketplaceboot.controller;
+package com.lhg1006.secondhandmarketplaceboot.auth.controller;
 
-import com.lhg1006.secondhandmarketplaceboot.dto.AuthRequestDto;
-import com.lhg1006.secondhandmarketplaceboot.dto.AuthResponseDto;
-import com.lhg1006.secondhandmarketplaceboot.service.AuthService;
+import com.lhg1006.secondhandmarketplaceboot.auth.dto.AuthRequestDto;
+import com.lhg1006.secondhandmarketplaceboot.auth.dto.AuthResponseDto;
+import com.lhg1006.secondhandmarketplaceboot.auth.service.AuthService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

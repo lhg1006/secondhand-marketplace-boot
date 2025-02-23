@@ -1,9 +1,12 @@
-package com.lhg1006.secondhandmarketplaceboot.service;
+package com.lhg1006.secondhandmarketplaceboot.user.service;
 
-import com.lhg1006.secondhandmarketplaceboot.dto.*;
-import com.lhg1006.secondhandmarketplaceboot.entity.User;
+import com.lhg1006.secondhandmarketplaceboot.user.entity.User;
 import com.lhg1006.secondhandmarketplaceboot.exception.CustomException;
-import com.lhg1006.secondhandmarketplaceboot.repository.UserRepository;
+import com.lhg1006.secondhandmarketplaceboot.user.repository.UserRepository;
+import com.lhg1006.secondhandmarketplaceboot.user.dto.UserDto;
+import com.lhg1006.secondhandmarketplaceboot.user.dto.UserPasswordRequestDto;
+import com.lhg1006.secondhandmarketplaceboot.user.dto.UserProfileRequestDto;
+import com.lhg1006.secondhandmarketplaceboot.user.dto.UserProfileResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

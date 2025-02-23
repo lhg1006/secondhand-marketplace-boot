@@ -1,10 +1,10 @@
-package com.lhg1006.secondhandmarketplaceboot.service;
+package com.lhg1006.secondhandmarketplaceboot.auth.service;
 
-import com.lhg1006.secondhandmarketplaceboot.config.JwtTokenProvider;
-import com.lhg1006.secondhandmarketplaceboot.dto.AuthRequestDto;
-import com.lhg1006.secondhandmarketplaceboot.entity.User;
+import com.lhg1006.secondhandmarketplaceboot.security.JwtTokenProvider;
+import com.lhg1006.secondhandmarketplaceboot.auth.dto.AuthRequestDto;
+import com.lhg1006.secondhandmarketplaceboot.user.entity.User;
 import com.lhg1006.secondhandmarketplaceboot.exception.CustomException;
-import com.lhg1006.secondhandmarketplaceboot.repository.UserRepository;
+import com.lhg1006.secondhandmarketplaceboot.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;

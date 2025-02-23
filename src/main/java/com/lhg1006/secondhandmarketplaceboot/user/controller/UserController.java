@@ -1,7 +1,10 @@
-package com.lhg1006.secondhandmarketplaceboot.controller;
+package com.lhg1006.secondhandmarketplaceboot.user.controller;
 
-import com.lhg1006.secondhandmarketplaceboot.dto.*;
-import com.lhg1006.secondhandmarketplaceboot.service.UserService;
+import com.lhg1006.secondhandmarketplaceboot.user.service.UserService;
+import com.lhg1006.secondhandmarketplaceboot.user.dto.UserDto;
+import com.lhg1006.secondhandmarketplaceboot.user.dto.UserPasswordRequestDto;
+import com.lhg1006.secondhandmarketplaceboot.user.dto.UserProfileRequestDto;
+import com.lhg1006.secondhandmarketplaceboot.user.dto.UserProfileResponseDto;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.lhg1006.secondhandmarketplaceboot.dto;
+package com.lhg1006.secondhandmarketplaceboot.auth.dto;
 
 import lombok.*;
 

@@ -1,6 +1,6 @@
-package com.lhg1006.secondhandmarketplaceboot.repository;
+package com.lhg1006.secondhandmarketplaceboot.user.repository;
 
-import com.lhg1006.secondhandmarketplaceboot.entity.User;
+import com.lhg1006.secondhandmarketplaceboot.user.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

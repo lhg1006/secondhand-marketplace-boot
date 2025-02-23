@@ -1,4 +1,4 @@
-package com.lhg1006.secondhandmarketplaceboot.entity;
+package com.lhg1006.secondhandmarketplaceboot.user.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

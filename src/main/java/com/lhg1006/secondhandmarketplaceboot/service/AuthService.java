@@ -3,6 +3,7 @@ package com.lhg1006.secondhandmarketplaceboot.service;
 import com.lhg1006.secondhandmarketplaceboot.config.JwtTokenProvider;
 import com.lhg1006.secondhandmarketplaceboot.dto.AuthRequestDto;
 import com.lhg1006.secondhandmarketplaceboot.entity.User;
+import com.lhg1006.secondhandmarketplaceboot.exception.CustomException;
 import com.lhg1006.secondhandmarketplaceboot.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -20,7 +21,7 @@ public class AuthService {
     public void registerUser(AuthRequestDto.Signup request) {
         // 중복된 username 검사
         if (userRepository.existsByUsername(request.getUsername())) {
-            throw new IllegalArgumentException("이미 존재하는 사용자 이름입니다.");
+            throw new CustomException("이미 존재하는 사용자입니다.", 400);
         }
 
         // 비밀번호 암호화 후 저장
@@ -40,7 +41,7 @@ public class AuthService {
                 .orElseThrow(() -> new UsernameNotFoundException("유저를 찾을 수 없습니다."));
 
         if (!passwordEncoder.matches(request.getPassword(), user.getPassword())) {
-            throw new IllegalArgumentException("잘못된 비밀번호입니다.");
+            throw new CustomException("잘못된 비밀번호입니다.", 401);
         }
 
         return jwtTokenProvider.createToken(user.getUsername());
